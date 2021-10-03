@@ -1,0 +1,8150 @@
+[
+  {
+    "name": "Fireball",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 1,
+    "description": "Deals 9 fire damage to units in a 2 tile burst.",
+    "onlyMelee": false,
+    "range": 8,
+    "radius": 2,
+    "damage": 9,
+    "charges": 18,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        1,
+        3
+      ],
+      "damage": [
+        8,
+        2
+      ],
+      "charges": [
+        8,
+        2
+      ],
+      "range": [
+        3,
+        1
+      ],
+      "chaos": [
+        1,
+        3,
+        "Chaos Ball",
+        "Fireball randomly deals [physical], [lightning], or [fire] damage.  If a unit is resistant to one or more of these damage types, fireball deals the damage type that unit is least resistant to.",
+        "damage type"
+      ],
+      "energy": [
+        1,
+        4,
+        "Energy Ball",
+        "Fireball randomly deals [arcane], [holy], or [fire] damage.  If a unit is resistant to one or more of these damage types, fireball deals the damage type that unit is least resistant to.",
+        "damage type"
+      ],
+      "ash": [
+        1,
+        5,
+        "Ash Ball",
+        "Fireball randomly deals [poison], [dark], or [fire] damage.  If a unit is resistant to one or more of these damage types, fireball deals the damage type that unit is least resistant to.\nFireball blinds for 1 turn.",
+        "damage type"
+      ]
+    }
+  },
+  {
+    "name": "Lightning Bolt",
+    "stats": [
+      "range",
+      "charges",
+      "damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 1,
+    "description": "Deals 12 lightning damage in a beam.",
+    "onlyMelee": false,
+    "range": 10,
+    "damage": 12,
+    "charges": 18,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        9,
+        3
+      ],
+      "range": [
+        5,
+        2
+      ],
+      "charges": [
+        12,
+        2
+      ],
+      "channel": [
+        1,
+        3,
+        "Channeling",
+        "Lightning bolt can be channeled for up to 10 turns."
+      ],
+      "judgement": [
+        1,
+        6,
+        "Judgement Bolt",
+        "Lightning bolt also deals holy and dark damage",
+        "bolt"
+      ],
+      "energy": [
+        1,
+        6,
+        "Energy Bolt",
+        "Lightning bolt also deals fire and arcane damage",
+        "bolt"
+      ]
+    }
+  },
+  {
+    "name": "Annihilate",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "cascade_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Chaos",
+        {
+          "r": 255,
+          "g": 171,
+          "b": 77
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Deals 16 fire damage, 16 lightning damage, and 16 physical damage to the target.",
+    "onlyMelee": false,
+    "range": 6,
+    "damage": 16,
+    "charges": 8,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": false,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "cascade_range": [
+        4,
+        3,
+        "Cascade",
+        "Hits from Annihilate will jump to nearby targets if the main target is killed"
+      ],
+      "dark": [
+        1,
+        1,
+        "Dark Annihilation",
+        "Annihilate deals an additional dark damage hit"
+      ],
+      "arcane": [
+        1,
+        1,
+        "Arcane Annihilation",
+        "Annihilate deals an additional arcane damage hit"
+      ],
+      "charges": [
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Lightning Form",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Whenever you cast a lightning spell, teleport to that spell's target.\nGain 100 lightning resistance.\nGain 100 physical resistance.\nThis effect ends the first turn that you fail to cast a lightning spell.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Mega Annihilate",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "cascade_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Chaos",
+        {
+          "r": 255,
+          "g": 171,
+          "b": 77
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Deals 99 fire damage, 99 lightning damage, and 99 physical damage to the target.",
+    "onlyMelee": false,
+    "range": 5,
+    "damage": 99,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "cascade_range": [
+        4,
+        3,
+        "Cascade",
+        "Hits from Annihilate will jump to nearby targets if the main target is killed"
+      ],
+      "dark": [
+        1,
+        2,
+        "Dark Annihilation",
+        "Annihilate deals an additional dark damage hit"
+      ],
+      "arcane": [
+        1,
+        2,
+        "Arcane Annihilation",
+        "Annihilate deals an additional arcane damage hit"
+      ],
+      "damage": [
+        99,
+        4
+      ]
+    }
+  },
+  {
+    "name": "Teleport",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Translocation",
+        {
+          "r": 186,
+          "g": 104,
+          "b": 200
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Teleport to target tile",
+    "onlyMelee": false,
+    "range": 15,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        2,
+        3
+      ],
+      "range": [
+        8,
+        2
+      ],
+      "void_teleport": [
+        1,
+        5,
+        "Void Teleport",
+        "Teleport deals arcane damage to all enemy units in line of sight of the targeted tile equal to its maximum number of charges."
+      ]
+    }
+  },
+  {
+    "name": "Blink",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Translocation",
+        {
+          "r": 186,
+          "g": 104,
+          "b": 200
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Teleport to target tile",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "requires_los": [
+        -1,
+        2,
+        "Blindcasting",
+        "Blink can be cast without line of sight"
+      ],
+      "range": [
+        3,
+        3
+      ],
+      "charges": [
+        5,
+        2
+      ],
+      "lightning_blink": [
+        1,
+        4,
+        "Lightning Blink",
+        "Blink deals lightning damage in a 3 tile burst upon arrival.  The damage is equal to twice the distance travelled, rounded up.",
+        "damage"
+      ],
+      "dark_blink": [
+        1,
+        4,
+        "Dark Blink",
+        "Blink deals dark damage in a 3 tile burst upon arrival.  The damage is equal to twice the distance travelled, rounded up.",
+        "damage"
+      ]
+    }
+  },
+  {
+    "name": "Void Beam",
+    "stats": [
+      "range",
+      "charges",
+      "damage"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Deal 25 arcane damage and destroy walls in a beam.",
+    "onlyMelee": false,
+    "range": 15,
+    "damage": 25,
+    "charges": 7,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        21,
+        5
+      ],
+      "range": [
+        5,
+        2
+      ],
+      "charges": [
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Thunder Strike",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Deal 24 lightning damage to the target.\nStun all enemies in a 2 tile burst around the target.",
+    "onlyMelee": false,
+    "range": 10,
+    "radius": 2,
+    "damage": 24,
+    "charges": 9,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        3,
+        2
+      ],
+      "requires_los": [
+        -1,
+        3,
+        "Blindcasting",
+        "Thunderstrike can be cast without line of sight"
+      ],
+      "damage": [
+        36,
+        4
+      ],
+      "storm_power": [
+        1,
+        2,
+        "Storm Power",
+        "Radius and stun duration are doubled if the target is inside of a storm cloud."
+      ],
+      "heaven_strike": [
+        1,
+        4,
+        "Heaven Strike",
+        "Thunder Strike also deals holy damage"
+      ]
+    }
+  },
+  {
+    "name": "Chaos Barrage",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "num_targets"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Chaos",
+        {
+          "r": 255,
+          "g": 171,
+          "b": 77
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Fire 8 bolts of chaotic energy at random units in a cone.\nEach bolt randomly deals 9 fire, 9 lightning, or 9 physical damage.",
+    "onlyMelee": false,
+    "range": 7,
+    "damage": 9,
+    "charges": 8,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        4,
+        1
+      ],
+      "damage": [
+        4,
+        5
+      ],
+      "num_targets": [
+        5,
+        4,
+        "Extra Bolts"
+      ]
+    }
+  },
+  {
+    "name": "Disperse",
+    "stats": [
+      "range",
+      "charges",
+      "radius"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Translocation",
+        {
+          "r": 186,
+          "g": 104,
+          "b": 200
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Teleport all units in a 3 tile radius to random locations\nThe caster is unaffected.",
+    "onlyMelee": false,
+    "range": 6,
+    "radius": 3,
+    "charges": 15,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        2,
+        2
+      ],
+      "charges": [
+        10,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Petrify",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Inflict petrify on the target for 10 turns.\nPetrified units cannot act.\nPetrified units gain 100 ice resist.\nPetrified units gain 100 lightning resist.\nPetrified units gain 75 physical resist.\nPetrified units gain 75 fire resist.",
+    "onlyMelee": false,
+    "range": 8,
+    "charges": 10,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        5,
+        1
+      ],
+      "glassify": [
+        1,
+        3,
+        "Glassify",
+        "Turn the target to glass instead of stone.  Glass targets have -100 physical resist."
+      ]
+    }
+  },
+  {
+    "name": "Wolf",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 1,
+    "description": "Summon a wolf.\nThe wolf has 11 HP.\nThe wolf has a melee attack which deals 5 physical damage.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 12,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": true,
+    "upgrades": {
+      "leap_range": [
+        4,
+        3,
+        "Pounce",
+        "Summoned wolves gain a leap attack"
+      ],
+      "minion_damage": 4,
+      "minion_health": [
+        12,
+        3
+      ],
+      "blood_hound": [
+        1,
+        3,
+        "Blood Hound",
+        "Summon blood hounds instead of wolves.",
+        "hound"
+      ],
+      "ice_hound": [
+        1,
+        3,
+        "Ice Hound",
+        "Summon ice hounds instead of wolves.",
+        "hound"
+      ],
+      "clay_hound": [
+        1,
+        6,
+        "Clay Hound",
+        "Summon clay hounds instead of wolves.",
+        "hound"
+      ],
+      "wolf_pack": [
+        1,
+        8,
+        "Wolf Pack",
+        "Each cast of wolf consumes 2 charges and summons 4 wolves."
+      ]
+    }
+  },
+  {
+    "name": "Giant Bear",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Summon a giant bear.\nThe bear has 65 HP.\nThe bear has a melee attack which deals 10 physical damage.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": true,
+    "upgrades": {
+      "minion_health": [
+        30,
+        2
+      ],
+      "minion_damage": [
+        15,
+        4
+      ],
+      "charges": [
+        2,
+        3
+      ],
+      "minion_attacks": [
+        1,
+        3
+      ],
+      "armored": [
+        1,
+        3,
+        "Armored Bear",
+        "Summons an armored bear instead of a giant bear.  Armored bears have increased physical resistance and HP, but are vulnerable to lightning damage.",
+        "species"
+      ],
+      "venom": [
+        1,
+        4,
+        "Venom Bear",
+        "Summons a venom bear instead of a giant bear.  Venom Bears have a poison bite, and heal whenever an enemy takes poison damage.",
+        "species"
+      ],
+      "blood": [
+        1,
+        5,
+        "Blood Bear",
+        "Summons a blood bear instead of a giant bear.  Blood bears are resistant to dark damage, and deal increasing damage with each attack.",
+        "species"
+      ]
+    }
+  },
+  {
+    "name": "Sight of Blood",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Must target a damaged living unit.\nThe target is stunned for 4 turns.\nStunned units cannot act.\nAll living units in line of sight of the target go berserk for 4 turns.\nBerserk units are hostile to all other units.  They will attack and be attacked by their allies.",
+    "onlyMelee": false,
+    "range": 10,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        3,
+        3
+      ],
+      "demon_units": [
+        1,
+        2,
+        "Demon Frenzy",
+        "Demon units are also effected"
+      ],
+      "requires_los": [
+        -1,
+        2,
+        "Blindcasting",
+        "Sight of Blood can be cast without line of sight"
+      ]
+    }
+  },
+  {
+    "name": "Lightning Storm",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Create a thunderstorm with a 4 tile radius.\nEach turn, each tile in the storm has a 50% chance of taking 12 lightning damage.\nThe storm lasts for 10 turns.",
+    "onlyMelee": false,
+    "range": 9,
+    "radius": 4,
+    "damage": 12,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "strikechance": [
+        25,
+        2
+      ],
+      "requires_los": [
+        -1,
+        3,
+        "Blindcasting",
+        "Lightning Storm can be cast without line of sight"
+      ],
+      "radius": [
+        2,
+        2
+      ],
+      "damage": 7
+    }
+  },
+  {
+    "name": "Prison of Thorns",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Surround a group of enemies with carnivorous plants.\nThe plants have 7 HP and cannot move.\nThe plants have a melee attack which deals 3 physical damage.\nThe plants vanish after 15 turns.",
+    "onlyMelee": false,
+    "range": 10,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_damage": [
+        3,
+        2
+      ],
+      "minion_health": [
+        7,
+        2
+      ],
+      "iron": [
+        1,
+        5,
+        "Iron Prison",
+        "Summon iron thorns instead, which deal 3 more damage and are resistant to many forms of damage.",
+        "prison"
+      ],
+      "icy": [
+        1,
+        6,
+        "Icy Prison",
+        "Summon icy thorns instead, which have a ranged ice attack.",
+        "prison"
+      ]
+    }
+  },
+  {
+    "name": "Pillar of Fire",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Deal 50 fire in a 1 tile burst.\nDeal double damage to the center tile.",
+    "onlyMelee": false,
+    "range": 10,
+    "radius": 1,
+    "damage": 50,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        1,
+        3
+      ],
+      "damage": [
+        30,
+        2
+      ],
+      "charges": [
+        2,
+        2
+      ],
+      "channel": [
+        1,
+        3,
+        "Channeling",
+        "Pillar of Flame becomes a channeled spell"
+      ]
+    }
+  },
+  {
+    "name": "Boiling Blood",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "All allied units gain 6 damage to their fire and physical abilities.\nLasts 7 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 9,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "extra_damage": [
+        6,
+        3
+      ],
+      "duration": [
+        7,
+        2
+      ],
+      "holy_fury": [
+        1,
+        3,
+        "Holy Fury",
+        "Boiling Blood also impacts holy abilities"
+      ],
+      "dark_fury": [
+        1,
+        3,
+        "Dark Fury",
+        "Boiling Blood also impacts dark abilities"
+      ]
+    }
+  },
+  {
+    "name": "Healing Light",
+    "stats": [
+      "range",
+      "charges",
+      "heal"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Heal all allies in line of sight for 25 health.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 10,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "heal": [
+        20,
+        1
+      ],
+      "charges": [
+        8,
+        2
+      ],
+      "shields": [
+        1,
+        2,
+        "Shielding Light",
+        "Allies in line of sight gain 1 shield"
+      ]
+    }
+  },
+  {
+    "name": "Regeneration Aura",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "duration",
+      "heal"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Each turn for 8 turns, all allied units in a 10 tile radius are healed for 4 HP.",
+    "onlyMelee": false,
+    "range": 0,
+    "radius": 10,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "heal": [
+        4,
+        2
+      ],
+      "duration": [
+        8,
+        1
+      ],
+      "whole_map": [
+        1,
+        4,
+        "Global",
+        "The aura heals all allies on the level"
+      ]
+    }
+  },
+  {
+    "name": "Void Orb",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Orb",
+        {
+          "r": 248,
+          "g": 168,
+          "b": 183
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Summon a void orb next to the caster.\nThe orb melts through walls along the way, and deals 9 arcane damage each turn to all adjacent units.\nThe orb has no will of its own, each turn it will float one tile towards the target.\nThe orb can be destroyed by arcane damage.",
+    "onlyMelee": false,
+    "range": 9,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "fire_edge": [
+        1,
+        5,
+        "Red Dwarf",
+        "Void orb deals an additional layer of fire damage"
+      ],
+      "range": [
+        5,
+        2
+      ],
+      "minion_damage": [
+        9,
+        3
+      ],
+      "orb_walk": [
+        1,
+        2,
+        "Void Walk",
+        "Targeting an existing void orb with another detonates it, and then teleports you to that location."
+      ]
+    }
+  },
+  {
+    "name": "Dominate",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Target enemy unit with 40 HP or lower becomes your minion.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        2,
+        2
+      ],
+      "hp_threshold": [
+        40,
+        3,
+        "HP Threshold",
+        "Increase the maximum HP units which can be targeted"
+      ],
+      "check_cur_hp": [
+        1,
+        4,
+        "Brute Force",
+        "Dominate targets based on current hp instead of maximum hp."
+      ]
+    }
+  },
+  {
+    "name": "Flame Gate",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Whenever you cast a fire spell, summon a fire elemental at the target of that spell.\nFire elementals have 22 HP, 100 fire resist, 50 physical resist, and -50 ice resist.\nFire elementals have an attack which deals 7 fire damage with a 4 tile range.\nFire elementals vanish after 9 turns.\nThis effect lasts until you fail to cast a fire spell.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_range": [
+        2,
+        2
+      ],
+      "minion_duration": [
+        7,
+        2
+      ],
+      "minion_damage": [
+        7,
+        4
+      ]
+    }
+  },
+  {
+    "name": "Eye of Fire",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Eye",
+        {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Every 3 turns, deals 15 fire damage to a random enemy unit in line of sight.\nLasts 30 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 15,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "shot_cooldown": [
+        -1,
+        1
+      ],
+      "duration": 15,
+      "damage": [
+        7,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Eye of Lightning",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Eye",
+        {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Every 3 turns, deals 15 lightning damage to a random enemy unit in line of sight.\nLasts 30 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 15,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "shot_cooldown": [
+        -1,
+        1
+      ],
+      "duration": 15,
+      "damage": [
+        7,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Eye of Ice",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Eye",
+        {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Every 3 turns, deals 15 ice damage to a random enemy unit in line of sight.\nLasts 30 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 15,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "shot_cooldown": [
+        -1,
+        1
+      ],
+      "duration": 15,
+      "damage": [
+        7,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Nightmare Aura",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "duration",
+      "aura_damage",
+      "aura_damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Each turn, randomly deals 2 arcane or 2 dark damage to each enemy in a 7 tile radius.\nThis damage is fixed, and cannot be increased using shrines, skills, or buffs.\nLasts 30 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "radius": 7,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        3,
+        2
+      ],
+      "duration": 15,
+      "charges": [
+        4,
+        2
+      ],
+      "dark_dream": [
+        1,
+        5,
+        "Dark Dream",
+        "Upon ending, temporarily summon Ravens, Werewolves, and Old Witches based on the total damage dealt by the spell.",
+        "dream"
+      ],
+      "electric_dream": [
+        1,
+        5,
+        "Electric Dream",
+        "Upon ending, temporarily summon Spark Spirits, Thunderbirds, and Aelves based on the total damage dealt by the spell.",
+        "dream"
+      ],
+      "fever_dream": [
+        1,
+        5,
+        "Fever Dream",
+        "Upon ending, temporarily summon Fire Lizards, Fire Spirits, and Flame Rifts based on the total damage dealt by the spell.",
+        "dream"
+      ]
+    }
+  },
+  {
+    "name": "Basilisk Armor",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Whenever an enemy unit targets you with a spell or attack, that unit is petrified for 2 turns.\nLasts 10 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": 4,
+      "duration": 5
+    }
+  },
+  {
+    "name": "Watcher Form",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Each turn, fire a lightning bolt at the farthest enemy in line of sight dealing 40 lightning damage in a beam.\nYou cannot move or cast spells.\nGain 100 physical resist.\nGain 100 fire resist.\nGain 100 lightning resist.\nGain 100 poison resist.\nLasts 5 turns",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 40,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        30,
+        3
+      ],
+      "charges": [
+        3,
+        2
+      ],
+      "duration": 3
+    }
+  },
+  {
+    "name": "Imp Swarm",
+    "stats": [
+      "range",
+      "charges",
+      "duration",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range",
+      "num_summons"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Chaos",
+        {
+          "r": 255,
+          "g": 171,
+          "b": 77
+        }
+      ]
+    ],
+    "level": 6,
+    "description": "Each turn, summon 2 imps near the caster.\nImps have 5 HP and can fly.\nImps have a ranged attack dealing 4 damage with a 3 tile range.\nEach imp is either a fire, iron, or spark imp.\nThe imps each last 11 turns, and this effect lasts 5 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_range": [
+        2,
+        3
+      ],
+      "num_summons": [
+        1,
+        2
+      ],
+      "minion_duration": [
+        7,
+        2
+      ],
+      "minion_damage": [
+        5,
+        4
+      ],
+      "metalswarm": [
+        1,
+        6,
+        "Metal Swarm",
+        "Imp swarm summons copper imps instead of spark imps, and furnace imps instead of fire imps.",
+        "swarm"
+      ],
+      "darkswarm": [
+        1,
+        5,
+        "Dark Swarm",
+        "Imp swarm summons rot imps, void imps, and insanity imps instead of fire, spark, and iron imps.",
+        "swarm"
+      ],
+      "megaswarm": [
+        1,
+        7,
+        "Mega Swarm",
+        "Imp swarm summons giant imps instead of normal sized ones",
+        "swarm"
+      ]
+    }
+  },
+  {
+    "name": "Lightning Halo",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Deal 15 lightning damage to all units in a 3 tile ring each turn.\nLasts 9 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "radius": 3,
+    "damage": 15,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        1,
+        1
+      ],
+      "duration": [
+        3,
+        2
+      ],
+      "damage": [
+        10,
+        2
+      ],
+      "charges": [
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Mystic Vision",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "All other spells gain 5 range.\nLasts 8 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        3,
+        2
+      ],
+      "duration": [
+        8,
+        2
+      ],
+      "bonus": [
+        5,
+        4
+      ],
+      "aura": [
+        1,
+        5,
+        "Vision Aura",
+        "Mystic vision affects all allied units"
+      ]
+    }
+  },
+  {
+    "name": "Mystic Power",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "All other spells gain 7 damage.\nLasts 8 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 7,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        8,
+        2
+      ],
+      "bonus": [
+        4,
+        4,
+        "Damage Bonus",
+        "Mystic Power's damage bonus is increased by 4"
+      ],
+      "stackable": [
+        1,
+        4,
+        "Intensity",
+        "Mystic Power stacks in intensity instead of duration"
+      ]
+    }
+  },
+  {
+    "name": "Flame Burst",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Deal 35 fire damage in a 6 tile burst around the caster.",
+    "onlyMelee": false,
+    "range": 0,
+    "radius": 6,
+    "damage": 35,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        3,
+        2
+      ],
+      "damage": [
+        15,
+        3
+      ],
+      "charges": [
+        3,
+        2
+      ],
+      "meltflame": [
+        1,
+        4,
+        "Melting Flame",
+        "Melt walls adjacent to the blast",
+        "flame"
+      ],
+      "dawnflame": [
+        1,
+        5,
+        "Bright Flame",
+        "Flame Burst deals [holy] instead of [fire], and shields allied units instead of damaging them.",
+        "flame"
+      ],
+      "spreadflame": [
+        1,
+        7,
+        "Spreading Flame",
+        "Each cast of flame burst consumes all remaining charges.\nFor each charge consumed, flame burst gets +1 radius and +1 damage.\nSlain enemies create additional explosions with half radius and damage.",
+        "flame"
+      ]
+    }
+  },
+  {
+    "name": "Fire Drake",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "breath_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Dragon",
+        {
+          "r": 176,
+          "g": 18,
+          "b": 10
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon a Fire Drake at target square.\nFire Drakes have 45 HP, fly, and have 100 fire resist.\nFire Drakes have a breath weapon which deals 9 fire damage.\nFire Drakes have a melee attack which deals 8 physical damage.",
+    "onlyMelee": false,
+    "range": 4,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_health": [
+        25,
+        3
+      ],
+      "breath_damage": [
+        10,
+        2
+      ],
+      "dragon_mage": [
+        1,
+        6,
+        "Dragon Mage",
+        "Summoned Fire Drakes can cast Fireball with a 3 turn cooldown.\nThis Fireball gains all of your upgrades and bonuses."
+      ]
+    }
+  },
+  {
+    "name": "Storm Drake",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "breath_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Dragon",
+        {
+          "r": 176,
+          "g": 18,
+          "b": 10
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon a storm drake at target square.\nStorm drakes have 45 HP, fly, and have 100 lightning resist.\nStorm drakes have a breath weapon which creates storm clouds that deal 10 lightning damage.\nStorm drakes have a melee attack which deals 8 physical damage.",
+    "onlyMelee": false,
+    "range": 4,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_health": [
+        25,
+        2
+      ],
+      "minion_physical_resist": [
+        75,
+        3,
+        "Cloudform",
+        "Summoned Storm Drakes have 75% physical resist."
+      ],
+      "drake_swap": [
+        1,
+        2,
+        "Drake Swap",
+        "Whenever you target a summoned Storm Drake with a lightning spell, swap places with it."
+      ],
+      "dragon_mage": [
+        1,
+        5,
+        "Dragon Mage",
+        "Summoned Storm Drakes can cast Lightning Bolt with a 3 turn cooldown.\nThis Lightning Bolt gains all of your upgrades and bonuses."
+      ]
+    }
+  },
+  {
+    "name": "Void Drake",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "breath_damage",
+      "minion_health",
+      "minion_range",
+      "shields"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Dragon",
+        {
+          "r": 176,
+          "g": 18,
+          "b": 10
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon a Void Drake at target square.\nVoid Drakes have 45 HP, fly, and have 100 arcane resist.\nVoid Drakes have a breath weapon which deals 8 arcane damage and melts walls.\nVoid Drakes have a melee attack which deals 8 physical damage.",
+    "onlyMelee": false,
+    "range": 4,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_health": [
+        25,
+        2
+      ],
+      "shields": [
+        3,
+        3
+      ],
+      "dragon_mage": [
+        1,
+        5,
+        "Dragon Mage",
+        "Summoned Void Drakes can cast Magic Missile with a 3 turn cooldown.\nThis Magic Missile gains all of your upgrades and bonuses."
+      ],
+      "essence_drake": [
+        1,
+        4,
+        "Essence Drake",
+        "Whenever a summoned Void Drake kills an enemy unit, a random temporary ally gains +4 turns to its duration."
+      ]
+    }
+  },
+  {
+    "name": "Ice Drake",
+    "stats": [
+      "range",
+      "charges",
+      "duration",
+      "minion_damage",
+      "breath_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Dragon",
+        {
+          "r": 176,
+          "g": 18,
+          "b": 10
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon an Ice Drake at target square.\nIce Drakes have 45 HP, fly, and have 100 ice resist.\nIce Drakes have a breath weapon which deals 8 ice damage and freezes units.\nIce Drakes have a melee attack which deals 8 physical damage.",
+    "onlyMelee": false,
+    "range": 4,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_health": [
+        25,
+        2
+      ],
+      "duration": [
+        3,
+        2,
+        "Freeze Duration"
+      ],
+      "dragon_mage": [
+        1,
+        5,
+        "Dragon Mage",
+        "Summoned Ice Drakes can cast Death Chill with an 8 turn cooldown.\nThis Death Chill gains all of your upgrades and bonuses."
+      ]
+    }
+  },
+  {
+    "name": "Chain Lightning",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "cascade_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Fire an arcing bolt of electricity dealing 8 lightning damage.\nThe bolt repeatably arcs to new targets within the cascade range.\nEach arc deals damage to all units along a beam.\nThe bolt can arc up to 4 tiles, and cannot pass through walls.\nThe bolt terminates when it cannot arc to any new targets.",
+    "onlyMelee": false,
+    "range": 9,
+    "damage": 8,
+    "charges": 8,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "cascade_range": [
+        4,
+        4
+      ],
+      "damage": [
+        8,
+        3
+      ],
+      "weathercraft": [
+        1,
+        3,
+        "Cloud Conductance",
+        "Chain Lightning can arc to blizzards and storm clouds"
+      ],
+      "shield": [
+        1,
+        6,
+        "Lightning Shield",
+        "Chain Lightning can arc to friendly targets.\nFriendly units hit by Chain Lightning gain 1 SH, up to a max of 3, instead of damaged."
+      ]
+    }
+  },
+  {
+    "name": "Death Bolt",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "minion_damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 1,
+    "description": "Deals 9 dark damage to one target.\nSlain living units are raised as skeletons.\nRaised skeletons have max HP equal to that of the slain unit, and deal 5 physical damage in melee.\nSkeletons of flying units can fly.",
+    "onlyMelee": false,
+    "range": 8,
+    "damage": 9,
+    "charges": 18,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": false,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        12,
+        3
+      ],
+      "charges": [
+        10,
+        2
+      ],
+      "minion_damage": [
+        9,
+        3
+      ],
+      "wither": [
+        1,
+        2,
+        "Withering",
+        "Non living units damaged by Death Bolt lose max hp equal to the damage dealt."
+      ],
+      "soulbattery": [
+        1,
+        7,
+        "Soul Battery",
+        "Deathbolt permenantly gains 1 damage whenever it slays a living target."
+      ]
+    }
+  },
+  {
+    "name": "Touch of Death",
+    "stats": [
+      "range",
+      "charges",
+      "damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Deal 200 dark damage to one unit in melee range.",
+    "onlyMelee": true,
+    "range": 1,
+    "damage": 200,
+    "charges": 9,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": false,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "arcane_damage": 150,
+      "fire_damage": 150,
+      "physical_damage": 150,
+      "raise_raven": [
+        1,
+        2,
+        "Touch of the Raven",
+        "When a [living] target dies to touch of death, it is raised as a friendly Raven.",
+        "raising"
+      ],
+      "raise_vampire": [
+        1,
+        4,
+        "Touch of the Vampire",
+        "When a [living] target dies to touch of death, it is raised as a friendly Vampire.",
+        "raising"
+      ],
+      "raise_reaper": [
+        1,
+        6,
+        "Touch of the Reaper",
+        "When a [living] target dies to touch of death, it is raise as a friendly Reaper for 6 turns",
+        "raising"
+      ]
+    }
+  },
+  {
+    "name": "Seal Fate",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "delay",
+      "delay"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "After 4 turns, deal 160 dark damage to target unit.",
+    "onlyMelee": false,
+    "range": 8,
+    "damage": 160,
+    "charges": 13,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "range": 7,
+      "requires_los": [
+        -1,
+        2,
+        "Blindcasting",
+        "Seal Fate can be cast without line of sight"
+      ],
+      "damage": [
+        80,
+        2
+      ],
+      "spreads": [
+        1,
+        2,
+        "Spreading Curse",
+        "When Sealed Fate's duration expires, it jumps to a random enemy in line of sight."
+      ]
+    }
+  },
+  {
+    "name": "Wheel of Death",
+    "stats": [
+      "range",
+      "charges",
+      "damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Deal 200 dark damage to a random enemy unit.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 200,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        3,
+        4
+      ],
+      "cascade": [
+        1,
+        7,
+        "Death Roulette",
+        "On kill, gain a Roulette stack for 10 turns.\nWheel of death hits an additional enemy for each Roulette stack you have at cast time."
+      ]
+    }
+  },
+  {
+    "name": "Volcanic Eruption",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Create a 6 tile burst of lava in a chasm.\nThe burst flows up to 3 tiles out of the chasm.\nThe lava deals 46 fire damage",
+    "onlyMelee": false,
+    "range": 10,
+    "radius": 6,
+    "damage": 46,
+    "charges": 5,
+    "canTargetWalls": true,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "flow_range": [
+        2,
+        3
+      ],
+      "requires_los": [
+        -1,
+        2,
+        "Blindcasting",
+        "Volcano can be cast without line of sight"
+      ],
+      "damage": [
+        24,
+        3
+      ],
+      "wall_cast": [
+        1,
+        4,
+        "Wallcano",
+        "In addition to chasms, volcano may target walls.  Doing so turns the walls into chasms"
+      ]
+    }
+  },
+  {
+    "name": "Underworld Passage",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Translocation",
+        {
+          "r": 186,
+          "g": 104,
+          "b": 200
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Teleport to any tile adjacent to a chasm.\nCan only be cast while adjacent to a chasm.",
+    "onlyMelee": false,
+    "range": 99,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": 3
+    }
+  },
+  {
+    "name": "Earthen Sentinel",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Summon an Earth Elemental.\nEarth elementals have 120 HP, 50 physical resist, 50 fire resist, 50 lightning resist, and cannot move.\nEarth elementals have a melee attack which deals 20 physical.The elemental vanishes after 15 turns.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_damage": [
+        15,
+        3
+      ],
+      "minion_health": [
+        80,
+        3
+      ],
+      "earthquake_totem": [
+        1,
+        6,
+        "Earthquake Totem",
+        "Earthen Sentinel gains your Earthquake spell on a 3 turn cool down.",
+        "totem"
+      ],
+      "stinging_totem": [
+        1,
+        5,
+        "Stinging Totem",
+        "Earthen Sentinel gains your Poison Sting spell.",
+        "totem"
+      ],
+      "holy_totem": [
+        1,
+        7,
+        "Holy Totem",
+        "Earthen Sentinel gains your Heavenly Blast spell on a 2 turn cool down.",
+        "totem"
+      ]
+    }
+  },
+  {
+    "name": "Ghostball",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "minion_duration",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Deal 11 dark damage to enemy units in a 1 tile radius.\nSummon ghosts at empty tiles in the radius.\nGhosts have 4 HP, fly, 100 physical resist, 50 dark resist, and passively blink.\nGhosts have a melee attack which deals 1 dark damage.\nThe ghosts vanish after 14 turns.",
+    "onlyMelee": false,
+    "range": 5,
+    "radius": 1,
+    "damage": 11,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        1,
+        3
+      ],
+      "minion_duration": [
+        15,
+        2
+      ],
+      "minion_damage": [
+        3,
+        3
+      ],
+      "king": [
+        1,
+        5,
+        "Ghost King",
+        "A Ghost King is summoned at the center of the ghost ball.",
+        "center summon"
+      ],
+      "mass": [
+        1,
+        4,
+        "Ghost Mass",
+        "A Ghostly Mass is summoned at the center of the ghost ball.",
+        "center summon"
+      ]
+    }
+  },
+  {
+    "name": "Mystic Memory",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ]
+    ],
+    "level": 6,
+    "description": "Regain all charges of a random other spell which currently has no remaining charges.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Conjure Memories",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Regain a charge of each of your conjuration spells",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges_regained": [
+        1,
+        2
+      ],
+      "charges": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Permenance",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Your spells and temporary summons last an extra 5 turns.\nThis effect lasts 20 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        20,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Death Gaze",
+    "stats": [
+      "range",
+      "charges",
+      "damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Each allied unit deals 4 dark damage to a random enemy in its line of sight.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 4,
+    "charges": 10,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        4,
+        3
+      ],
+      "charges": [
+        6,
+        2
+      ],
+      "vampiric": [
+        1,
+        4,
+        "Vampiric Gaze",
+        "Each allied unit heals for 100% of the damage it causes"
+      ]
+    }
+  },
+  {
+    "name": "Magic Missile",
+    "stats": [
+      "range",
+      "charges",
+      "damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 1,
+    "description": "Deal 11 arcane damage to the target.",
+    "onlyMelee": false,
+    "range": 12,
+    "damage": 11,
+    "charges": 20,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        15,
+        2
+      ],
+      "damage": [
+        10,
+        3
+      ],
+      "range": [
+        5,
+        1
+      ],
+      "shield_burn": [
+        3,
+        1,
+        "Shield Burn",
+        "Magic Missile removes up to 3 SH from the target before dealing damage."
+      ],
+      "slaughter": [
+        1,
+        4,
+        "Slaughter Bolt",
+        "If Magic Missile targets a [living] unit, it deals [poison], [dark], and [physical] damage instead of [arcane].",
+        "bolt"
+      ],
+      "holy": [
+        1,
+        4,
+        "Holy Bolt",
+        "If Magic Missile targets an [undead] unit, it deals [holy] damage in addition to [arcane] damage.",
+        "bolt"
+      ],
+      "disruption": [
+        1,
+        6,
+        "Disruption Bolt",
+        "If Magic Missile targets an [arcane] unit, it deals [dark] and [holy] damage instead of [arcane].",
+        "bolt"
+      ]
+    }
+  },
+  {
+    "name": "Devour Mind",
+    "stats": [
+      "range",
+      "charges",
+      "damage"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Deal 25 arcane to an enemy unit.\nThen, if the target is under 50%% HP, deal it an additional 25 dark damage.\nCan only target living units.",
+    "onlyMelee": false,
+    "range": 4,
+    "damage": 25,
+    "charges": 7,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        18,
+        3
+      ],
+      "spiriteater": [
+        1,
+        4,
+        "Spirit Eater",
+        "Can target [demon] and [arcane] units"
+      ],
+      "gluttony": [
+        1,
+        2,
+        "Gluttony",
+        "If Devour Mind kills the target, the charge cost is refunded"
+      ]
+    }
+  },
+  {
+    "name": "Death Shock",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "num_targets",
+      "cascade_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Deal 17 lightning damage and 17 dark damage to the target.\nIf the target is slain, this effect bounces to a random enemy in line of sight up to 4 tiles away.\nCan hit up to 3 targets.",
+    "onlyMelee": false,
+    "range": 9,
+    "damage": 17,
+    "charges": 9,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": false,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        7,
+        3
+      ],
+      "cascade_range": [
+        5,
+        2
+      ],
+      "infinite_bounces": [
+        1,
+        4,
+        "Infinite Cascades",
+        "There is no limit to the number of targets Death Shock can cascade to"
+      ]
+    }
+  },
+  {
+    "name": "Melt",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Target unit takes 22 fire damage and loses 100 physical resist.",
+    "onlyMelee": false,
+    "range": 6,
+    "damage": 22,
+    "charges": 15,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": false,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        16,
+        2
+      ],
+      "charges": 10,
+      "ice_resist": [
+        1,
+        3,
+        "Ice Penetration",
+        "Melt also reduces [ice] resist by 100"
+      ]
+    }
+  },
+  {
+    "name": "Dragon Roar",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration",
+      "cooldown_reduction",
+      "cooldown_reduction"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dragon",
+        {
+          "r": 176,
+          "g": 18,
+          "b": 10
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 6,
+    "description": "All allied dragons gain 25 max HP, 12 melee attack damage, and 1 turn cooldown reduction.\nLasts 25 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 12,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "hp_bonus": [
+        20,
+        3
+      ],
+      "charges": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Protect Minions",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "All allied units gain 50 physical resist, 50 fire resist, and 50 lightning resist.\nLasts 10 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "resist": [
+        25,
+        2
+      ],
+      "duration": 15,
+      "resist_arcane": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Word of Chaos",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Chaos",
+        {
+          "r": 255,
+          "g": 171,
+          "b": 77
+        }
+      ],
+      [
+        "Word",
+        {
+          "r": 255,
+          "g": 213,
+          "b": 79
+        }
+      ]
+    ],
+    "level": 7,
+    "description": "Stun each enemy for 6 turns and teleport them to random tiles.\nDeal 45 lightning damage to all fire enemies.\nDeal 45 fire damage to all lightning enemies.\nEach enemy construct loses all physical resist and takes 45 physical damage.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 45,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        1,
+        2
+      ],
+      "damage": [
+        20,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Word of Undeath",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Word",
+        {
+          "r": 255,
+          "g": 213,
+          "b": 79
+        }
+      ]
+    ],
+    "level": 7,
+    "description": "All undead units have their current and maximum HP doubled.\nAll other units except the caster lose half their current and maximum HP.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Word of Beauty",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Word",
+        {
+          "r": 255,
+          "g": 213,
+          "b": 79
+        }
+      ]
+    ],
+    "level": 7,
+    "description": "Heal yourself and all living units fully.\nDeal 25 lightning damage to demon and undead units.\nStun all arcane units for 7 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 25,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        1,
+        2
+      ],
+      "damage": [
+        17,
+        1
+      ]
+    }
+  },
+  {
+    "name": "Floating Eye",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_health",
+      "shields"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Eye",
+        {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon a floating eye.\nFloating eyes have 1 HP, 4 SH, float in place, and passively blink.\nFloating eyes have no attacks of their own, but will cast any other eye spells you know upon being summoned.\nFloating eyes vanish after 16 turns.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_duration": [
+        16,
+        2
+      ],
+      "charges": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Eye of Rage",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Eye",
+        {
+          "r": 255,
+          "g": 255,
+          "b": 255
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Every 3 turns, inflict berserk on a random enemy unit in line of sight for 2 turns.\nLasts 20 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "shot_cooldown": [
+        -1,
+        1
+      ],
+      "duration": 15,
+      "berserk_duration": 2,
+      "lycanthrophy": [
+        1,
+        5,
+        "Lycanthropy",
+        "When Eye of Rage targets a [living] unit with 25 or less HP, that unit is instantly killed and raised as friendly Werewolf.  That Werewolf is berserked for 14 turns."
+      ]
+    }
+  },
+  {
+    "name": "Chimera Familiar",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Chaos",
+        {
+          "r": 255,
+          "g": 171,
+          "b": 77
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon a Chimera Familiar.\nThe chimera has 6 fire damage and 6 lightning damage attacks with a range of 4 tiles.\nThe chimera mimics your casts of fire or lightning or chaos sorcery spells if the target is in range and line of sight.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": true,
+    "upgrades": {
+      "minion_resists": [
+        50,
+        2
+      ],
+      "charges": [
+        2,
+        3
+      ],
+      "nature_casting": [
+        1,
+        1,
+        "Nature Mimicry",
+        "The Chimera will mimic nature sorcery spells as well"
+      ],
+      "dark_casting": [
+        1,
+        1,
+        "Dark Mimicry",
+        "The Chimera will mimic dark sorcery spells as well"
+      ],
+      "arcane_casting": [
+        1,
+        1,
+        "Arcane Mimicry",
+        "The Chimera will mimic arcane sorcery spells as well"
+      ]
+    }
+  },
+  {
+    "name": "Arc Lightning",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "num_targets"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Lightning arcs to 3 enemies visible from the target tile.\nEach arc deals 16 lightning damage to units in a beam.",
+    "onlyMelee": false,
+    "range": 8,
+    "damage": 16,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "num_targets": [
+        3,
+        4
+      ],
+      "damage": [
+        9,
+        4
+      ],
+      "cascade": [
+        1,
+        5,
+        "Echo Flash",
+        "Secondary flashes dealing half damage and stunning for half duration are triggered at each initial arc target."
+      ]
+    }
+  },
+  {
+    "name": "Fan of Flames",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "max_channel"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Deal 9 fire damage to all units in a cone.\nThis spell can be channeled for up to 10 turns.  The effect is repeated each turn the spell is channeled.",
+    "onlyMelee": false,
+    "range": 5,
+    "damage": 9,
+    "charges": 18,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        7,
+        3
+      ],
+      "range": [
+        2,
+        3
+      ],
+      "charges": [
+        10,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Poison Sting",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ]
+    ],
+    "level": 1,
+    "description": "Deal 9 physical damage to target unit.\nThat unit is poisoned for 30 turns.\nPoisoned units take 1 poison damage each turn.",
+    "onlyMelee": false,
+    "range": 12,
+    "damage": 9,
+    "charges": 20,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "range": [
+        2,
+        4
+      ],
+      "charges": [
+        10,
+        3
+      ],
+      "duration": [
+        60,
+        2
+      ],
+      "antigen": [
+        1,
+        2,
+        "Acidity",
+        "Damaged targets lose all poison resist"
+      ]
+    }
+  },
+  {
+    "name": "Blue Lion",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Summon a blue lion.\nBlue lions have 28 HP, fly, have 50 arcane resist and 50 physical resist.\nBlue lions have a spell that grants 1 SH to themselves and allies in their line of sight, up to a maximum of 2 SH with a cooldown of 3 turns.\nBlue lions also have a melee attack which deals 7 physical damage.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "shield_max": [
+        2,
+        4
+      ],
+      "shield_cooldown": [
+        -1,
+        2
+      ],
+      "minion_damage": 9,
+      "holy_bolt": [
+        1,
+        4,
+        "Holy Bolt",
+        "The Blue Lion's melee attack is replaced by a range 6 holy bolt attack."
+      ]
+    }
+  },
+  {
+    "name": "Death Cleave",
+    "stats": [
+      "range",
+      "charges",
+      "duration",
+      "cascade_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Whenever a spell you cast kills its primary target, that spell is recast on a randomly selected nearby valid enemy target up to 4 tiles away.\nThis process repeats until the target survives the spell, or there are no nearby valid targets.\nLasts 2 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "cascade_range": [
+        4,
+        3
+      ],
+      "duration": [
+        3,
+        3
+      ],
+      "charges": [
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Multicast",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ]
+    ],
+    "level": 7,
+    "description": "Whenever you cast a sorcery spell, copy it.\nLasts 3 turns",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "copies": [
+        1,
+        4
+      ],
+      "duration": [
+        4,
+        3
+      ],
+      "charges": [
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Fae Court",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range",
+      "heal",
+      "shields",
+      "num_summons"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Summons a group of 5 faeries near the caster.\nThe faeries fly, and have 9 HP, 1 SH, 75 arcane resistance, and a passive blink.\nThe faeries can heal allies for 5 HP, with a range of 4 tiles.\nThe faeries have a 4 arcane damage attack, with a range of 4 tiles.\nThe faeries vanish after 15 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "num_summons": [
+        5,
+        4
+      ],
+      "heal": [
+        8,
+        3
+      ],
+      "shields": [
+        1,
+        2
+      ],
+      "summon_queen": [
+        1,
+        7,
+        "Summon Queen",
+        "A fae queen is summoned as well"
+      ],
+      "glass_fae": [
+        1,
+        9,
+        "Glass Faery",
+        "Summon glass faeries instead of normal ones."
+      ]
+    }
+  },
+  {
+    "name": "Ring of Spiders",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Summons a ring of giant spiders at the target, surrounded by a ring of webs.\nUnits blocking the spider ring are poisoned for 10 turns, creatures blocking the web ring are stunned for 1 turn.\nGiant spiders have 14 HP and spin webs.\nGiant spiders have a melee attack which deals 2 physical and inflicts 5 turns of poison.\nWebs stun non spider units which step on them for 1 turn.\nPoisoned units take 1 poison damage each turn.Stunned units cannot act.",
+    "onlyMelee": false,
+    "range": 8,
+    "damage": 0,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        32,
+        3
+      ],
+      "minion_health": [
+        10,
+        2
+      ],
+      "aether_spiders": [
+        1,
+        6
+      ]
+    }
+  },
+  {
+    "name": "Word of Madness",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Word",
+        {
+          "r": 255,
+          "g": 213,
+          "b": 79
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Chaos",
+        {
+          "r": 255,
+          "g": 171,
+          "b": 77
+        }
+      ]
+    ],
+    "level": 7,
+    "description": "Berserk all units except the caster for 5 turns.\nDeal dark damage to all construct units equal to half their current HP.\nFully heal all demon units.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        1,
+        2
+      ],
+      "duration": [
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "name": "Heavenly Blast",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Deal 7 holy damage to enemies and heal allies for 7 hp along a beam and in a 1 tile burst.",
+    "onlyMelee": false,
+    "range": 7,
+    "radius": 1,
+    "damage": 7,
+    "charges": 14,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "range": [
+        3,
+        2
+      ],
+      "radius": [
+        1,
+        2
+      ],
+      "damage": [
+        9,
+        3
+      ],
+      "charges": [
+        7,
+        2
+      ],
+      "spiritbind": [
+        1,
+        6,
+        "Spirit Bind",
+        "Slain enemies create temporary spirits.  Spirits are blinking holy undead with 4 hitpoints and a 2 damage ranged holy attack."
+      ],
+      "shield": [
+        1,
+        3,
+        "Shield",
+        "Affected ally units gain 2 SH, to a maximum of 5."
+      ],
+      "echo_heal": [
+        1,
+        4,
+        "Echo Heal",
+        "Affected ally units are re-healed for half the initial amount each turn for 5 turns."
+      ]
+    }
+  },
+  {
+    "name": "Holy Fire",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration",
+      "cascade_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Deal 22 fire damage in a vertical line and 22 holy damage in a horizontal line.\nStun demon and undead units in the affected area.",
+    "onlyMelee": false,
+    "range": 7,
+    "radius": 2,
+    "damage": 22,
+    "charges": 7,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        3,
+        3
+      ],
+      "damage": [
+        14,
+        3
+      ],
+      "radius": [
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Choir of Angels",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "heal",
+      "shields",
+      "num_summons"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Summons a choir of 3 angelic singers.\nThe singers have 10 HP, 1 SH, 50% resistance to fire and holy damage, and 100% resistance to dark damage.\nThe angels can sing, dealing 2 fire and 2 holy damage to all undead, demon, and dark units in a 5 tile radius. Living and holy units in the song's radius are healed for 1 HP.\nThe angels vanish after 10 turns.",
+    "onlyMelee": false,
+    "range": 7,
+    "radius": 5,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "shields": [
+        2,
+        2
+      ],
+      "num_summons": [
+        3,
+        4
+      ],
+      "minion_duration": [
+        10,
+        2
+      ],
+      "heal": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Heaven's Wrath",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "num_targets"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 6,
+    "description": "Deal 22 lightning damage and 22 holy damage to 3 units with the highest current HP.\nDoes not target friendly units or gates.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 22,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "culling": [
+        1,
+        3,
+        "Culling",
+        "Heaven's Wrath also damages the units with the lowest current HP."
+      ],
+      "damage": [
+        11,
+        3
+      ],
+      "stun_duration": [
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Suspend Mortality",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Target allied unit gains the ability to reincarnate on death for 40 turns.",
+    "onlyMelee": false,
+    "range": 8,
+    "charges": 8,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "lives": [
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Soul Tax",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Deal damage to target unit equal to one third of its health as holy damage, and then one third of its remaining health as dark damage.\nHeal the caster for the total amount of damage dealt.",
+    "onlyMelee": false,
+    "range": 4,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        3,
+        4
+      ],
+      "range": [
+        3,
+        2
+      ],
+      "arcane": [
+        1,
+        2,
+        "Arcane Taxation",
+        "Soul tax deals an additional third of the target's remaining HP as arcane damage."
+      ]
+    }
+  },
+  {
+    "name": "Holy Armor",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Gain 50 physical resist.\nGain 50 fire resist.\nGain 50 lightning resist.\nGain 50 dark resist.\nLasts 9 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        7,
+        3
+      ],
+      "resist": 25
+    }
+  },
+  {
+    "name": "Blinding Light",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Blind all units in line of sight of the caster for 4 turns.\nBlind units have all their spell ranges reduced to 1.Deals 5 holy damage to affected undead and demon units.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 5,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        9,
+        4
+      ],
+      "duration": [
+        4,
+        2
+      ],
+      "dark_units": [
+        1,
+        2,
+        "Dark Units",
+        "Dark units also take holy damage."
+      ]
+    }
+  },
+  {
+    "name": "Flock of Eagles",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health",
+      "minion_range",
+      "shields",
+      "num_summons"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Summons 4 eagles near the caster.\nEagles have 18 HP and can fly.\nEagles have a melee attack which deals 6 physical damage.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "dive_attack": [
+        1,
+        4,
+        "Dive Attack",
+        "Grants the eagles a dive attack"
+      ],
+      "num_summons": [
+        2,
+        3
+      ],
+      "shields": [
+        2,
+        4
+      ],
+      "thunderbirds": [
+        1,
+        4,
+        "Thunderbirds",
+        "Summon thunderbirds instead of eagles.  Thunderbirds deal and resist [lightning] damage."
+      ]
+    }
+  },
+  {
+    "name": "Heavenly Idol",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_health",
+      "heal",
+      "shields"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Summon an Idol of Beauty.\nThe idol has 35 HP, 2 SH, and is stationary.\nThe idol has  a passive aura which affects all units in line of sight of the idol.Affected allies are healed for for 1 HP.\nAffected enemies take 1 holy damage.\nAffected undead and demon units take an additional 1 lightning damage.\nThe idol vanishes after 15 turns.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": true,
+    "upgrades": {
+      "shields": [
+        5,
+        3
+      ],
+      "fire_gaze": [
+        1,
+        4,
+        "Fire Gaze",
+        "The Idol gains a fire beam attack"
+      ],
+      "heal": [
+        1,
+        3
+      ],
+      "minion_duration": [
+        15,
+        1
+      ]
+    }
+  },
+  {
+    "name": "Gold Drake",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "breath_damage",
+      "minion_health",
+      "minion_range",
+      "shields"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Dragon",
+        {
+          "r": 176,
+          "g": 18,
+          "b": 10
+        }
+      ]
+    ],
+    "level": 6,
+    "description": "Summon a Gold Drake.\nGold drakes have 45 HP, 100 holy resist, and can fly.\nGold drakes have a breath weapon which deals 9 holy damage to enemies and heals allies for 9 HP.\nGold drakes have a melee attack which deals 8 physical damage",
+    "onlyMelee": false,
+    "range": 4,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_health": [
+        25,
+        2
+      ],
+      "breath_damage": [
+        12,
+        4
+      ],
+      "dragon_mage": [
+        1,
+        6,
+        "Dragon Mage",
+        "Summoned Gold Drakes can cast Healing Light with a 15 turn cooldown.\nThis Healing Light gains all of your upgrades and bonuses."
+      ]
+    }
+  },
+  {
+    "name": "Call Seraph",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "heal",
+      "shields"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon a seraph.\nSeraphim have 33 HP, 3 SH, and can fly.\nSeraphim have a cleaving melee attack which deals 14 fire and 14 holy damage.\nThe seraph vanishes after 14 turns.",
+    "onlyMelee": false,
+    "range": 4,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_damage": [
+        10,
+        4
+      ],
+      "minion_duration": [
+        14,
+        2
+      ],
+      "moonblade": [
+        1,
+        3,
+        "Moonblade",
+        "The Seraph deals arcane damage in addition to fire and holy damage with its cleave attack."
+      ],
+      "essence": [
+        1,
+        5,
+        "Essence Aura",
+        "The Seraph increases the duration of all temporary allies within 5 tiles by 1 each turn.",
+        "aura"
+      ],
+      "heal": [
+        5,
+        2,
+        "Heal Aura",
+        "The Seraph heals all your other minions allies within 5 tiles for 5 HP each turn.",
+        "aura"
+      ],
+      "holy_fire": [
+        1,
+        5,
+        "Holy Fire Aura",
+        "The Seraph gains a damage aura, randomly dealing either [2_fire:fire] or [2_holy:holy] damage to enemies within 5 tiles each turn.",
+        "aura"
+      ]
+    }
+  },
+  {
+    "name": "Call Archon",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range",
+      "shields"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon an Archon.\nArchons have 77 HP, 3 SH, and can fly.\nArchons have beam attacks which deal 14 lightning damage to enemies and shield allies.\nThe Archon vanishes after 14 turns.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_range": [
+        7,
+        3
+      ],
+      "minion_damage": [
+        10,
+        4
+      ],
+      "minion_duration": [
+        14,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Pain Mirror",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Whenever you take damage, deal that much dark damage to all enemies in line of sight.\nLasts 10 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        10,
+        2
+      ],
+      "charges": [
+        4,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Pyrostatic Pulse",
+    "stats": [
+      "range",
+      "charges",
+      "damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Deal 16 fire damage in a beam.\nDeal 16 lightning damage to tiles adjacent to the beam.",
+    "onlyMelee": false,
+    "range": 8,
+    "damage": 16,
+    "charges": 8,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "range": [
+        4,
+        2
+      ],
+      "damage": [
+        9,
+        3
+      ],
+      "charges": [
+        8,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Aether Swap",
+    "stats": [
+      "range",
+      "charges",
+      "damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Translocation",
+        {
+          "r": 186,
+          "g": 104,
+          "b": 200
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Swap places with target unit.\nThat unit takes 16 arcane damage.\nCannot target arcane immune units.",
+    "onlyMelee": false,
+    "range": 7,
+    "damage": 16,
+    "charges": 8,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "requires_los": [
+        -1,
+        2,
+        "Blindcasting",
+        "Aether Swap can be cast without line of sight"
+      ],
+      "range": [
+        3,
+        1
+      ],
+      "charges": [
+        10,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Siphon Shields",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Steal up to 1 SH from all units in line of sight.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "shield_burn": [
+        5,
+        2,
+        "Shield Burn",
+        "Deal 5 fire damage per shield stolen"
+      ],
+      "shield_steal": [
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "name": "Hungry Maw",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range",
+      "shields"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Summons a hungry maw.\nThe maw has 8 HP, 1 SH, floats, and is stationary.\nThe maw has a 9 physical damage attack, which pulls enemies towards it, with a range of 7 tiles.\nThe maw vanishes after 15 turns.",
+    "onlyMelee": false,
+    "range": 7,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "shields": [
+        5,
+        3
+      ],
+      "minion_range": [
+        7,
+        2
+      ],
+      "minion_damage": [
+        12,
+        5
+      ],
+      "range": [
+        4,
+        1
+      ]
+    }
+  },
+  {
+    "name": "Darkness",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Each turn, blind all units for 1 turn.\nBlind units have all their spell ranges reduced to 1.Demon and undead units are unaffected.\nLasts 5 turns",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        3,
+        2
+      ],
+      "charges": [
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Hollow Flesh",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Curse a group of units with the essence of undeath.\nAffected units become undead and lose living.\nAffected units lose 25% of their max HP.\nAffected units lose 100 holy resist.\nAffected units gain 100 dark resist.\nAffected units cannot be healed.",
+    "onlyMelee": false,
+    "range": 6,
+    "charges": 9,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "max_health_loss": [
+        25,
+        2
+      ],
+      "charges": [
+        7,
+        2
+      ],
+      "fire_vulnerability": [
+        50,
+        2,
+        "Fire Vulnerability"
+      ]
+    }
+  },
+  {
+    "name": "Cantrip Cascade",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Cast each of your level 1 sorcery spells on each enemy in a cone.",
+    "onlyMelee": false,
+    "range": 7,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        3,
+        2
+      ],
+      "range": [
+        3,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Conductance",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Curse an enemy with the essence of conductivity.\nThat enemy loses 50 lightning resist.\nWhenever you cast a lightning spell targeting that enemy, copy that spell.\nLasts 10 turns.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 12,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "copies": [
+        1,
+        2,
+        "Multicopy",
+        "Make 1 extra copy of lightning spells cast on the target"
+      ],
+      "resistance_debuff": [
+        50,
+        2
+      ],
+      "charges": [
+        6,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Invoke Savagery",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Each living ally attacks a random enemy unit in melee range.\nThe attack deals 14 physical damage and inflicts 2 turns of stun.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 14,
+    "charges": 11,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        9,
+        2
+      ],
+      "duration": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Meteor Shower",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "num_targets",
+      "max_channel",
+      "storm_radius",
+      "storm_radius"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 7,
+    "description": "Rains 7 meteors down on random tiles in a 7 tile radius each turn.\nMeteors deal 23 physical damage, destroy walls, and inflict stun for 2 turns.\nMeteors also deal 23 fire damage in a 2 tile radius.\nThis spell can be channeled for up to 5 turns.  The effect is repeated each turn the spell is channeled.",
+    "onlyMelee": false,
+    "range": 50,
+    "radius": 2,
+    "damage": 23,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "num_targets": [
+        3,
+        4
+      ],
+      "stun_duration": [
+        3,
+        2
+      ],
+      "rock_size": [
+        1,
+        2,
+        "Meteor Size",
+        "Increase the physical damage and stun radius from 0 to 1"
+      ],
+      "max_channel": [
+        5,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Shrapnel Blast",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "num_targets"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Detonate target wall tile.\nEnemies adjacent to the wall tile take 12 fire damage.\nThe explosion fires 16 shards at random tiles in a 4 tile burst.\nEach shard deals 12 physical damage.",
+    "onlyMelee": false,
+    "range": 7,
+    "radius": 4,
+    "damage": 12,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "num_targets": [
+        12,
+        3,
+        "More Shrapnel",
+        "12 more shrapnel shards are shot"
+      ],
+      "puncture": [
+        1,
+        2,
+        "Puncturing Blast",
+        "The shrapnel can penetrate or destroy walls"
+      ],
+      "homing": [
+        1,
+        7,
+        "Magnetized Shards",
+        "The shrapnel shards always target enemies if possible."
+      ]
+    }
+  },
+  {
+    "name": "Plague of Filth",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range",
+      "max_channel",
+      "num_summons"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Summon a group of 2 toads and fly swarms.\nToads have 12 HP.\nToads have a ranged tongue attack which deals 2 physical damage and pulls enemies towards it.\nToads can hop up to 4 tiles away.\nFly swarms have 6 HP, 75 dark resist, 75 physical resist, -50 ice resist, and can fly.\nFly swarms have a melee attack which deals 1 physical damage.\nThe summons vanish after 7 turns.\nThis spell can be channeled for up to 15 turns.",
+    "onlyMelee": false,
+    "range": 5,
+    "radius": 2,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "num_summons": [
+        2,
+        4
+      ],
+      "minion_duration": [
+        4,
+        3
+      ],
+      "minion_damage": [
+        3,
+        3
+      ],
+      "max_channel": [
+        25,
+        1
+      ],
+      "snakes": [
+        1,
+        2,
+        "Serpent Plague",
+        "Plague of Filth has a 50% chance of summoning a snake instead of a fly swarm or frog.  Snakes have 3/4 the health of toads, deal 1 more damage.  Snakes apply 5 stacks of poison on hit."
+      ]
+    }
+  },
+  {
+    "name": "Searing Orb",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Orb",
+        {
+          "r": 248,
+          "g": 168,
+          "b": 183
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 6,
+    "description": "Summon a searing orb next to the caster.\nThe orb deals 3 fire damage each turn to all units in line of sight.\nThe caster is immune to this damage.\nThe orb has no will of its own, each turn it will float one tile towards the target.\nThe orb can be destroyed by ice damage.",
+    "onlyMelee": false,
+    "range": 9,
+    "radius": 3,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "range": [
+        5,
+        2
+      ],
+      "melt_walls": [
+        1,
+        4,
+        "Matter Melting",
+        "Searing Orb can melt and be cast through walls"
+      ]
+    }
+  },
+  {
+    "name": "Ball Lightning",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "minion_damage",
+      "minion_health",
+      "num_targets"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Orb",
+        {
+          "r": 248,
+          "g": 168,
+          "b": 183
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Summon a lighting orb next to the caster.\nEach turn the orb fires 3 beams of electricity at random enemy units in line of sight. The beams deal 6 lightning damage.\nThe orb has no will of its own, each turn it will float one tile towards the target.\nThe orb can be destroyed by lightning damage.",
+    "onlyMelee": false,
+    "range": 9,
+    "radius": 4,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "num_targets": [
+        2,
+        3
+      ],
+      "range": [
+        5,
+        2
+      ],
+      "minion_damage": [
+        10,
+        5
+      ],
+      "orb_walk": [
+        1,
+        1,
+        "Magnetic Pulse",
+        "Targeting an existing lightning orb causes it to emit a magnetic pulse that pulls [construct] and [lightning] units in line of sight 3 tiles towards the orb."
+      ]
+    }
+  },
+  {
+    "name": "Orb Control",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Orb",
+        {
+          "r": 248,
+          "g": 168,
+          "b": 183
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Retarget all allied orbs to target tile.",
+    "onlyMelee": false,
+    "range": 9,
+    "charges": 11,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {}
+  },
+  {
+    "name": "Glass Orb",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "duration",
+      "minion_health"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Orb",
+        {
+          "r": 248,
+          "g": 168,
+          "b": 183
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Summon a glass orb next to the caster.\nEach turn the orb inflicts glassify on enemy units in a 3 tile area.\nGlassified units cannot act.\nGlassified units gain -100 physical resist.\nGlassified units gain 100 ice resist.\nGlassified units gain 100 lightning resist.\nGlassified units gain 75 fire resist.\nThe orb has no will of its own, each turn it will float one tile towards the target.\nThe orb can be destroyed by physical damage.",
+    "onlyMelee": false,
+    "range": 9,
+    "radius": 3,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        1,
+        2
+      ],
+      "range": [
+        4,
+        2
+      ],
+      "shield": [
+        1,
+        1,
+        "Shielding",
+        "The orb shields minions (1 shield, up to a max of 3) in the radius."
+      ],
+      "radius": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Fiery Tormentor",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon a fiery tormentor.\nThe tormentor has 34 HP.\nThe tormentor has a burst attack dealing 7 fire damage with a 4 tile radius.\nThe tormentor has a lifesteal attack dealing 2 dark damage with a 2 tile range.\nThe tormentor vanishes after 50 turns.",
+    "onlyMelee": false,
+    "range": 7,
+    "radius": 4,
+    "charges": 7,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": true,
+    "upgrades": {
+      "minion_damage": [
+        3,
+        2
+      ],
+      "minion_health": [
+        10,
+        2
+      ],
+      "radius": [
+        2,
+        3
+      ],
+      "frostfire": [
+        1,
+        3,
+        "Frostfire Tormentor",
+        "Summons a frostfire tormentor instead.",
+        "variant"
+      ],
+      "ghostfire": [
+        1,
+        3,
+        "Ghostfire Tormentor",
+        "Summons a ghostfire tormentor instead.",
+        "variant"
+      ]
+    }
+  },
+  {
+    "name": "Petrification Aura",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "duration",
+      "num_targets"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Each turn, inflict petrify on up to 3 unpetrified enemy units in a 7 tile radius each turn.\nPetrified units cannot act.\nPetrified units gain 100 ice resist.\nPetrified units gain 100 lightning resist.\nPetrified units gain 75 physical resist.\nPetrified units gain 75 fire resist.Lasts 7 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "radius": 7,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "petrify_duration": [
+        2,
+        3
+      ],
+      "num_targets": [
+        2,
+        2
+      ],
+      "duration": [
+        15,
+        2
+      ],
+      "glassify": [
+        1,
+        6,
+        "Glassify",
+        "Turn enemies to glass instead of stone, makeing them take double physical damage instead of one quarter."
+      ]
+    }
+  },
+  {
+    "name": "Dispersion Field",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "duration",
+      "num_targets"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Translocation",
+        {
+          "r": 186,
+          "g": 104,
+          "b": 200
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Each turn, teleport 3 enemies in a 6 tile radius to random locations on the map.\nLasts 7 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "radius": 6,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "num_targets": [
+        2,
+        2
+      ],
+      "duration": [
+        5,
+        1
+      ],
+      "charges": [
+        5,
+        4
+      ]
+    }
+  },
+  {
+    "name": "Knightly Oath",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ]
+    ],
+    "level": 7,
+    "description": "Summon a void knight, a chaos knight, and a storm knight.\nEach knight has 90 HP, various resistances, and an arsenal of unique magical abilities.\nThe caster takes 40 holy damage whenever a knight dies.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "void_court": [
+        1,
+        5,
+        "Void Court",
+        "Summon only void knights.  Summon a void champion as well.",
+        "court"
+      ],
+      "storm_court": [
+        1,
+        5,
+        "Storm Court",
+        "Summon only storm knights.  Summon a storm champion as well.",
+        "court"
+      ],
+      "chaos_court": [
+        1,
+        5,
+        "Chaos Court",
+        "Summon only chaos knights.  Summon a chaos champion as well.",
+        "court"
+      ],
+      "charges": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Toxin Burst",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Deal 1 poison damage and inflict poison on all units in a 4 tile radius for 20 turns.\nPoisoned units take 1 poison damage each turn.",
+    "onlyMelee": false,
+    "range": 12,
+    "radius": 4,
+    "damage": 1,
+    "charges": 10,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        20,
+        1
+      ],
+      "radius": [
+        2,
+        2
+      ],
+      "damage": [
+        15,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Toxic Spores",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health",
+      "minion_range",
+      "num_summons"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Summons 2 mushbooms.\nMushbooms have 11 HP.\nMushbooms have a ranged attack dealing 1 poison damage and inflicting 4 turns of poison.\nMushbooms inflict 12 turns of poison on units in melee range when they die.",
+    "onlyMelee": false,
+    "range": 8,
+    "charges": 16,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "num_summons": [
+        2,
+        3
+      ],
+      "grey_mushboom": [
+        1,
+        2,
+        "Grey Mushbooms",
+        "Summon grey mushbooms instead, which apply stun instead of poison.",
+        "color"
+      ],
+      "red_mushboom": [
+        1,
+        5,
+        "Red Mushboom",
+        "Summon red mushbooms instead, which do not apply poison but deal fire damage",
+        "color"
+      ],
+      "glass_mushboom": [
+        1,
+        6,
+        "Glass Mushboom",
+        "Summon glass mushbooms instead, which apply glassify instead of poison",
+        "color"
+      ]
+    }
+  },
+  {
+    "name": "Amplify Venom",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "All poisoned enemies lose 100 poison resist for 10 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 8,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "resistance_debuff": [
+        100,
+        3
+      ],
+      "duration": [
+        10,
+        1
+      ],
+      "charges": [
+        12,
+        2
+      ],
+      "spread": [
+        1,
+        2,
+        "Spread Poison",
+        "Amplify Poison spreads poison to nearby enemies (radius 2)"
+      ]
+    }
+  },
+  {
+    "name": "Combust Poison",
+    "stats": [
+      "range",
+      "charges",
+      "radius"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Consume all poison on enemy units.\nDeal fire damage in an 2 tile burst around each affected enemy equal to 1x the amount of poison consumed.",
+    "onlyMelee": false,
+    "range": 0,
+    "radius": 2,
+    "charges": 9,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        1,
+        3
+      ],
+      "charges": [
+        9,
+        2
+      ],
+      "multiplier": [
+        1,
+        4
+      ]
+    }
+  },
+  {
+    "name": "Spider Queen",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health",
+      "num_summons"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Summon a spider queen.\nThe spider queen has 96 HP.\nThe spider queen hatches 4 baby spiders every 12 turns.\nBaby spiders have 3 HP and cannot attack, but they mature into giant spiders after 8 turns which have 14 HP.\nGiant spiders and the spider queen have melee attacks which deal 2 physical physical damage and inflicts 10 turns of poison.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": true,
+    "upgrades": {
+      "aether": [
+        1,
+        3,
+        "Aether Queen",
+        "Summon an aether spider queen instead.",
+        "species"
+      ],
+      "steel": [
+        1,
+        3,
+        "Steel Queen",
+        "Summon a steel spider queen instead.",
+        "species"
+      ]
+    }
+  },
+  {
+    "name": "Freeze",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Target unit is frozen for 5 turns.\nFrozen units cannot act. Frozen units unfreeze upon taking fire or physical damage.",
+    "onlyMelee": false,
+    "range": 8,
+    "charges": 20,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Iceball",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Deals 14 ice damage in a 2 tile burst.\nDamaged units are frozen for 3 turns.",
+    "onlyMelee": false,
+    "range": 7,
+    "radius": 2,
+    "damage": 14,
+    "charges": 11,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        1,
+        2
+      ],
+      "duration": [
+        2,
+        2
+      ],
+      "damage": [
+        10,
+        2
+      ],
+      "icecrush": [
+        1,
+        6,
+        "Ice Crush",
+        "Units inside of the area of effect which are already frozen take physical damage before being refrozen."
+      ]
+    }
+  },
+  {
+    "name": "Blizzard",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Create a blizzard with a 4 tile radius.\nEach turn, units in the blizzard take 5 ice damage, and have a 50% chance to be frozen.\nFrozen units cannot act. Frozen units unfreeze upon taking fire or physical damage.The blizzard lasts 5 turns.",
+    "onlyMelee": false,
+    "range": 9,
+    "radius": 4,
+    "damage": 5,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        5,
+        2
+      ],
+      "radius": [
+        2,
+        3
+      ],
+      "duration": [
+        5,
+        2
+      ],
+      "requires_los": [
+        -1,
+        3,
+        "Blindcasting",
+        "Blizzard can be cast without line of sight"
+      ]
+    }
+  },
+  {
+    "name": "Frostfire Hydra",
+    "stats": [
+      "range",
+      "charges",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Dragon",
+        {
+          "r": 176,
+          "g": 18,
+          "b": 10
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Summon a frostfire hydra.\nThe hydra has 16 HP, and is stationary.\nThe hydra has a beam attack which deals 7 fire damage with a 9 tile range.\nThe hydra has a beam attack which deals 7 ice damage with a 9 tile range.\nThe hydra vanishes after 15 turns.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 7,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": true,
+    "upgrades": {
+      "minion_range": [
+        6,
+        3
+      ],
+      "minion_duration": [
+        10,
+        2
+      ],
+      "minion_damage": [
+        7,
+        4
+      ]
+    }
+  },
+  {
+    "name": "Storm Burst",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Unleashes a 5 tile burst of storm energy.\nEach tile in the burst takes either 21 ice damage or 21 lightning damage.\nUnits dealt ice damage are frozen for 3 turns.\nUnits dealt lightning damage are stunned for 3 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "radius": 5,
+    "damage": 21,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        2,
+        3
+      ],
+      "clouds": [
+        1,
+        2,
+        "Cloud Nova",
+        "The nova leaves storm clouds and blizzards behind"
+      ],
+      "radius": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Death Chill",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Deal 11 dark damage to the target each turn for 5 turns.\nIf the target dies during this time, deals 11 ice damage and inflicts frozen for 5 turns on all enemies within a 3 tiles radius.\nFrozen units cannot act. Frozen units unfreeze upon taking fire or physical damage.",
+    "onlyMelee": false,
+    "range": 9,
+    "radius": 3,
+    "damage": 11,
+    "charges": 12,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": false,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        1,
+        2
+      ],
+      "damage": [
+        6,
+        2
+      ],
+      "duration": [
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Ice Phoenix",
+    "stats": [
+      "range",
+      "charges",
+      "minion_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Summon an ice phoenix.\nThe phoenix has 74 HP, flies, and reincarnates once upon death.\nThe phoenix has a ranged attack which deals 9 ice damage with a 4 tile range.\nWhen the phoenix dies, it explodes in a 6 tile burst, dealing 25 ice damage to enemies and granting 2 SH to allies.",
+    "onlyMelee": false,
+    "range": 5,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": true,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "lives": [
+        2,
+        3,
+        "Reincarnations",
+        "The phoenix will reincarnate 2 more times"
+      ],
+      "minion_damage": [
+        9,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Word of Ice",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Word",
+        {
+          "r": 255,
+          "g": 213,
+          "b": 79
+        }
+      ]
+    ],
+    "level": 7,
+    "description": "All non ice immune enemies under 50 HP are frozen for 5 turns.\nDeals 50 ice damage to all fire units.",
+    "onlyMelee": false,
+    "range": 0,
+    "damage": 50,
+    "charges": 1,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        4,
+        3
+      ],
+      "charges": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Ice Orb",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "minion_damage",
+      "minion_health"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Orb",
+        {
+          "r": 248,
+          "g": 168,
+          "b": 183
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summon an ice orb next to the caster.\nEach turn the orb deals 7 ice damage to enemy units in a 3 tile radius.\nFrozen units cannot act. Frozen units unfreeze upon taking fire or physical damage.The orb has no will of its own, each turn it will float one tile towards the target.\nThe orb can be destroyed by fire damage.",
+    "onlyMelee": false,
+    "range": 9,
+    "radius": 3,
+    "charges": 5,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "freeze_chance": [
+        50,
+        3,
+        "Freeze Chance",
+        "The orb has a 50% chance to freeze damaged targets for 1 turn"
+      ],
+      "radius": [
+        2,
+        2
+      ],
+      "minion_damage": [
+        5,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Icicle",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 1,
+    "description": "Deal 6 physical damage to the target.\nThen, deal 6 ice to the target and a 1 tile area around it.",
+    "onlyMelee": false,
+    "range": 9,
+    "radius": 1,
+    "damage": 6,
+    "charges": 22,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "freezing": [
+        1,
+        2,
+        "Freezing",
+        "Freeze the main target for 2 turns"
+      ],
+      "radius": [
+        1,
+        2
+      ],
+      "damage": [
+        9,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Chill Wind",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "duration"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Deals 21 ice damage and inflicts 6 turns of frozen on units in a 3 tile wide line perpendicular to the caster.",
+    "onlyMelee": false,
+    "range": 50,
+    "damage": 21,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        2,
+        3
+      ],
+      "damage": [
+        14,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Wall of Ice",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "minion_duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ],
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Summons a line of ice elementals with a length of 3 tiles.\nIce elementals have 36 HP, 50 physical resist, 100 ice resist, -100 fire resist, and cannot move.\nIce elementals have a ranged attack which deals 5 ice damage at a range of up to 3 tiles.\nThe elementals vanish after 15 turns.",
+    "onlyMelee": false,
+    "range": 7,
+    "radius": 1,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        1,
+        2
+      ],
+      "minion_range": [
+        3,
+        3
+      ],
+      "minion_damage": [
+        5,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Bone Barrage",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Your summoned allies in line of sight of the target take physical damage equal to half their health.\nEach affected ally deals that much physical damage to the target.",
+    "onlyMelee": false,
+    "range": 14,
+    "charges": 7,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": false,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "beam": [
+        1,
+        6,
+        "Bone Spears",
+        "Bone Barrage damages all targets in a beam from the minion to the target"
+      ],
+      "dark": [
+        1,
+        5,
+        "Cursed Bones",
+        "Bone Barrage also deals dark damage"
+      ]
+    }
+  },
+  {
+    "name": "Earthquake",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Nature",
+        {
+          "r": 114,
+          "g": 213,
+          "b": 114
+        }
+      ]
+    ],
+    "level": 3,
+    "description": "Invoke an earthquake with a 7 tile radius.\nEach tile in the area has a 50% chance to be affected.\nUnits on affected tiles take 21 physical physical damage.\nWalls on affected tiles are destroyed.",
+    "onlyMelee": false,
+    "range": 0,
+    "radius": 7,
+    "damage": 21,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        2,
+        3
+      ],
+      "damage": [
+        17,
+        3
+      ],
+      "safety": [
+        1,
+        2,
+        "Safety",
+        "Earthquake will not damage friendly units"
+      ]
+    }
+  },
+  {
+    "name": "Searing Seal",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Gain Seal of Searing.\nWhenever an enemy takes fire damage, the seal gains that many charges.\nWhen the seal expires, it deals 1 fire damage to all enemies in line of sight for every 4 charges it has.\nThe seal lasts 6 turns.\nRecasting the spell will expire the current seal and create a new one.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "charges": [
+        6,
+        2
+      ],
+      "duration": [
+        6,
+        1
+      ]
+    }
+  },
+  {
+    "name": "Soul Swap",
+    "stats": [
+      "range",
+      "charges"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ],
+      [
+        "Translocation",
+        {
+          "r": 186,
+          "g": 104,
+          "b": 200
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Swap places with a friendly undead unit.",
+    "onlyMelee": false,
+    "range": 50,
+    "charges": 9,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "forced_transfer": [
+        1,
+        2,
+        "Forced Transfer",
+        "Soul Swap can target enemy undead units as well."
+      ],
+      "charges": [
+        9,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Purity",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Lose all debuffs.\nYou cannot gain new debuffs.\nLasts 6 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "duration": [
+        6,
+        3
+      ],
+      "charges": [
+        4,
+        3
+      ]
+    }
+  },
+  {
+    "name": "Twilight Gaze",
+    "stats": [
+      "range",
+      "charges",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Holy",
+        {
+          "r": 246,
+          "g": 254,
+          "b": 141
+        }
+      ],
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 6,
+    "description": "All enemies in line of sight lose 50 dark resist and 50 holy resist.\nLasts 10 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 4,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "resistance_debuff": [
+        50,
+        3
+      ],
+      "duration": [
+        10,
+        2
+      ],
+      "arcane": [
+        1,
+        3,
+        "Arcane Gaze",
+        "Twilight Gaze also reduces [arcane] resist."
+      ]
+    }
+  },
+  {
+    "name": "Slime Form",
+    "stats": [
+      "range",
+      "charges",
+      "duration",
+      "minion_damage",
+      "minion_health",
+      "minion_range"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Assume slime form for 8 turns.\nGain 50 physical resist while in slime form.\nGain 100 poison resist while in slime form.\nSummon a friendly slime each turn while in slime form.\nSlimes have 10 HP, have a 50% chance each turn to gain 1 max HP, and split into two slimes upon reaching twice their starting HP.\nSlimes have a melee attack which deals 3 poison damage.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 2,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "fire_slimes": [
+        1,
+        1,
+        "Fire Slime",
+        "Gain an equal chance to summon fire slime."
+      ],
+      "ice_slimes": [
+        1,
+        2,
+        "Ice Slime",
+        "Gain an equal chance to summon ice slime."
+      ],
+      "void_slimes": [
+        1,
+        3,
+        "Void Slime",
+        "Gain an equal chance to summon void slime."
+      ],
+      "duration": [
+        10,
+        4
+      ]
+    }
+  },
+  {
+    "name": "Blazerip",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 2,
+    "description": "Deals 12 arcane and 12 fire damage in a 7 tile line perpendicular to the caster.\nMelts walls in the affected area.",
+    "onlyMelee": false,
+    "range": 6,
+    "radius": 3,
+    "damage": 12,
+    "charges": 8,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        5,
+        2
+      ],
+      "radius": [
+        2,
+        2
+      ]
+    }
+  },
+  {
+    "name": "Ice Vortex",
+    "stats": [
+      "range",
+      "charges",
+      "damage",
+      "radius",
+      "duration"
+    ],
+    "losRequired": false,
+    "schools": [
+      [
+        "Ice",
+        {
+          "r": 79,
+          "g": 195,
+          "b": 247
+        }
+      ],
+      [
+        "Arcane",
+        {
+          "r": 240,
+          "g": 98,
+          "b": 146
+        }
+      ],
+      [
+        "Sorcery",
+        {
+          "r": 233,
+          "g": 30,
+          "b": 99
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Must target a frozen unit.\nAll enemy units in a 5 tile radius are pulled towards that unit, frozen for 2 turns, and dealt 11 arcane and 11 ice damage.",
+    "onlyMelee": false,
+    "range": 10,
+    "radius": 5,
+    "damage": 11,
+    "charges": 6,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "damage": [
+        11,
+        3
+      ],
+      "duration": [
+        2,
+        2
+      ],
+      "radius": [
+        3,
+        2
+      ]
+    }
+  },
+  {
+    "name": "The Restless Dead",
+    "stats": [
+      "range",
+      "charges",
+      "duration",
+      "minion_damage"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Dark",
+        {
+          "r": 156,
+          "g": 39,
+          "b": 176
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ],
+      [
+        "Conjuration",
+        {
+          "r": 243,
+          "g": 108,
+          "b": 96
+        }
+      ]
+    ],
+    "level": 4,
+    "description": "Whenever a living enemy dies, raise it as a skeleton.\nRaised skeletons have max HP equal to that of the slain unit, and deal 5 physical damage in melee.\nSkeletons of flying units can fly.\nThis effect lasts 15 turns.",
+    "onlyMelee": false,
+    "range": 0,
+    "charges": 3,
+    "canTargetWalls": false,
+    "canTargetSelf": true,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "minion_damage": [
+        4,
+        3
+      ],
+      "duration": [
+        15,
+        2
+      ],
+      "charges": [
+        2,
+        2
+      ],
+      "salvage": [
+        1,
+        3,
+        "Junk Golems",
+        "Whenever an enemy constructs dies, raise it as a junk golem."
+      ],
+      "spirit_catcher": [
+        1,
+        5,
+        "Elemental Spirits",
+        "Whenever an enemy fire, ice or lightning unit dies, a random summoned ally gains 100 resistance to that element and a ranged attack of that type.  Each ally can gain only 1 such buff."
+      ]
+    }
+  },
+  {
+    "name": "Pyrostatic Curse",
+    "stats": [
+      "range",
+      "charges",
+      "radius",
+      "duration"
+    ],
+    "losRequired": true,
+    "schools": [
+      [
+        "Fire",
+        {
+          "r": 229,
+          "g": 28,
+          "b": 35
+        }
+      ],
+      [
+        "Lightning",
+        {
+          "r": 255,
+          "g": 238,
+          "b": 88
+        }
+      ],
+      [
+        "Enchantment",
+        {
+          "r": 49,
+          "g": 164,
+          "b": 144
+        }
+      ]
+    ],
+    "level": 5,
+    "description": "Curses targets in a 4 tile radius for 4 turns.\nWhenever a cursed target takes fire damage, 2 random enemy units in line of sight of that unit are dealt half that much lightning damage.\n",
+    "onlyMelee": false,
+    "range": 9,
+    "radius": 4,
+    "charges": 7,
+    "canTargetWalls": false,
+    "canTargetSelf": false,
+    "canTargetEmpty": true,
+    "mustTargetEmpty": false,
+    "mustTargetWalkable": false,
+    "upgrades": {
+      "radius": [
+        3,
+        2
+      ],
+      "duration": [
+        6,
+        3
+      ],
+      "beam": [
+        1,
+        5,
+        "Linear Conductance",
+        "Redealt lightning damage is dealt along a beam instead of just to one target."
+      ]
+    }
+  }
+]
